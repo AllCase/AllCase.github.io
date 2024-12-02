@@ -1,114 +1,137 @@
-.container{
-    width: 100%;
+.container {
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .head-line {
     width: 100%;
-    height: 10em;
+    height: 200px;
     background-image: url(bandeau-par-defaut.jpg);
     background-size: cover;
+    background-position: center center;
     display: flex;
     flex-direction: column;
-    /* Размещаем элементы вертикально */
+    justify-content: center;
     align-items: center;
-    /* Выровнять элементы по центру по горизонтали */
 }
 
-.ui button {
+.ui.button {
     height: 4em;
+    margin: 0.5rem;
 }
 
 .text {
-    color: #ffffff;
-    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 1rem;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .article__content {
     text-align: left;
-    margin: 5% 10% 5% 25%;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    margin: 2rem;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.vopr {
-    margin: 3% 0% 0%;
-    font-size: 35px;
-
+img {
+    max-width: 100%;
+    height: auto;
+    /* Сохраняет пропорции */
+    display: block;
+    /* Убирает лишний отступ снизу */
+    margin: 1rem auto;
+    /* Центрирование картинки */
 }
 
-.opr {
-    margin: 3% 0% 0%;
+
+.ui.header {
+    text-align: center;
 }
 
-.punkti {
-    line-height: 1.5
-}
-
+.vopr,
 .vopr2 {
-    margin: 3% 0% 0%;
-    font-size: 35px;
+    margin-top: 2rem;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
-.opr2 {
-    margin: 3% 0% 0%;
-}
-
-.opr3 {
-    margin: 3% 0% 0%;
-}
-
-.opr4 {
-    margin: 3% 0% 0%;
-}
-
-.opr5 {
-    margin-bottom: 100px;
-}
-
+.opr,
+.opr2,
+.opr3,
+.opr4,
+.opr5,
 .opr6 {
-    margin-bottom: 50px;
+    margin-top: 1rem;
 }
 
+.punkti,
 .punkti2 {
-    line-height: 1.5
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.5;
 }
 
 .info {
-    padding-bottom: 50px;
-}
-
-.ui.button a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    line-height: inherit;
+    padding-bottom: 2rem;
 }
 
 .sidebar {
-    position: fixed;
-    top: auto;
-    left: 0;
-    height: auto;
-    width: 200px;
     background-color: #2c3e50;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-y: auto;
+    height: auto;
+    /* Adjust as needed */
+}
+
+.sidebar h1 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
 .sidebar a {
-    font-size: 20px;
-    display: block;
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
+    display: block;
+    padding: 0.7rem 0;
+    border-radius: 5px;
 }
 
 .sidebar a:hover {
     background-color: #34495e;
+    text-decoration: underline;
+}
+
+.ui.segment {
+    margin-bottom: 2rem;
+    /* Add some spacing between segments */
+}
+
+.video-container {
+    position: relative;
+    /* Необходимо для корректной работы padding-bottom */
+    padding-bottom: 56.25%;
+    /* Соотношение сторон 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ui.header {
+    margin-bottom: 1rem;
+    /* Add some spacing below headers */
 }
 
 .podp {
@@ -117,59 +140,24 @@
 }
 
 .logo22 {
-    margin-bottom: 75px;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-.WordPressIMG {
-    margin-left: 250px;
-}
-
-.Joomla {
-    margin-left: 250px;
-}
-
-.Opencart {
-    margin-left: 250px;
-}
-
-.Drupal {
-    margin-left: 345px;
-    margin-bottom: 50px;
-}
-
-.bitr {
-    margin-left: 350px;
-
-}
-
-.video {
-    margin-left: 100px;
-    margin-bottom: 50px;
-    width: 700px;
-    height: 400px;
-}
-
-.ui.vertical.footer.segment{
-    margin-top: 50px;
-    width: auto;
+.ui.vertical.footer.segment {
+    margin-top: 2rem;
     background-color: rgba(128, 128, 128, 0.075);
+    padding: 2rem;
 }
 
-@media (max-width: 1277px){
-    .container{
-        width: 1300px;
+@media (max-width: 768px) {
+    .col-md-3 {
+        display: none;
+        /* Hide sidebar on smaller screens */
     }
 
-
-    .ui.vertical.footer.segment{
-        width: 1300px;
-    }
-    
-}
-
-@media (max-width: 768px){
-    .ui.celled.table{
-        width: 750px;
+    .col-md-9 {
+        width: 100%;
+        /* Make main content full-width */
     }
 }

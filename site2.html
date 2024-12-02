@@ -7,154 +7,192 @@
     <title>CMS-системы</title>
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="head" id="top">
-        <div class="container">
-            <div class="head-line">
-                <div class="ui fluid buttons">
-                    <button class="ui button">
-                        <a href="site1.html">
-                            <span class="ui large black text">Главная</span>
-                        </a>
-                    </button>
-                    <button class="ui teal button">
-                        <a href="site2.html">
-                            <span class="ui large text">Популярные CMS-системы</span>
-                        </a>
-                    </button>
-                    <button class="ui button">
-                        <a href="site3.html">
-                            <span class="ui large black text">Виды CMS</span>
-                        </a>
-                    </button>
-                    <button class="ui button">
-                        <a href="site4.html">
-                            <span class="ui large black text">Как выбрать CMS для сайта</span>
-                        </a>
-                    </button>
-                    <button class="ui button">
-                        <a href="site5.html">
-                            <span class="ui large black text">Определение CMS сайта</span>
-                        </a>
-                    </button>
-                    <button class="ui button">
-                        <a href="site6.html">
-                            <span class="ui large black text">О Нас</span>
-                        </a>
-                    </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 sticky-top" style="height: calc(100vh - 100px); overflow-y: auto;">
+                <div class="sidebar">
+                    <h1><a href="#top">В начало страницы</a></h1>
+                    <h1><a href="#section1">WordPress</a></h1>
+                    <h1><a href="#section2">Joomla!</a></h1>
+                    <h1><a href="#section3">OpenCart</a></h1>
+                    <h1><a href="#section4">Drupal</a></h1>
+                    <h1><a href="#section5">1C-Битрикс</a></h1>
                 </div>
-                <h1 class="text">CMS-системы: что это такое и для чего используются</h1>
             </div>
-            <div class="sidebar">
-                <h1><a href="#top">В начало страницы</a></h1>
-                <h1><a href="#section1">WordPress</a></h1>
-                <h1><a href="#section2">Joomla!</a></h1>
-                <h1><a href="#section3">OpenCart</a></h1>
-                <h1><a href="#section4">Drupal</a></h1>
-                <h1><a href="#section5">1C-Битрикс</a></h1>
-            </div>
-            <div class="article__content">
-                <div class="a-block-t-paragraph">
-                    <p><span style="font-kerning: none">
-                            <h1>Ниже рассмотрим популярные CMS-системы.</h1><span class="Apple-converted-space"></span>
-                        </span></p>
-                </div>
-                <div class="vopr" id="section1">
-                    <p>
-                    <h1>1. WordPress</h1>
-                    </p>
-                </div>
-                <div class="WordPressIMG">
-                    <img src="wordpress.jpg" width="600" height="400">
-                </div>
-                <div class="opr">
-                    <p><span>
-                            Подходит для создания сайтов под любые задачи (блог, форум, интернет-магазин, новостной
-                            портал). Внутри большое количество плагинов и открытый код, который можно дорабатывать под
-                            свои нужды. Движок сайта работает на MySQL — системе управления базами данных.
-                        </span></p>
-                    <p>
-                        WordPress хорош тем, что создавать там контент достаточно просто. Если вам не нужен сложный
-                        многостраничник, с детальной настройкой каждого блока, то WordPress — ваш выбор.
-                    </p>
-                    <p>Однако если установить слишком много плагинов, то сайт может плохо работать. Еще из минусов:
-                        исходный код не идеально подходит для SEO-оптимизации, нет технической поддержки, платформа не
-                        принимает оплату от пользователей из России.</p>
-                </div>
-                <div class="ui section divider"></div>
-                <div class="vopr2" id="section2">
-                    <p>
-                    <h1>2. Joomla!</h1>
-                    </p>
-                    <div class="Joomla">
-                        <img src="Joomla.png" width="600" height="400">
+            <div class="col-md-9 col-lg-10">
+                <div class="head" id="top">
+                    <div class="ui wrapped wrapping buttons"> <!-- Buttons are now fluid -->
+                        <a href="site1.html" class="ui button"><span class="ui black large text">Главная</span></a>
+                        <a href="site2.html" class="ui teal button"><span class="ui large  text">Популярные
+                                CMS-системы</span></a>
+                        <a href="site3.html" class="ui button"><span class="ui large black text">Виды
+                                CMS</span></a>
+                        <a href="site4.html" class="ui button"><span class="ui large black text">Как выбрать CMS
+                                для
+                                сайта</span></a>
+                        <a href="site5.html" class="ui button"><span class="ui large black text">Определение CMS
+                                сайта</span></a>
+                        <a href="site6.html" class="ui button"><span class="ui large black text">О
+                                Нас</span></a>
                     </div>
-                </div>
-                <div class="opr2">
-                    <p>Бесплатная платформа с открытом исходным кодом. Здесь также можно расширять возможности сайта и
-                        создавать его под любые нужды. Однако сделать это будет гораздо сложнее, чем на WordPress.</p>
-                    <p>У Joomla есть встроенная двухфакторная авторизация, система работы с seo-тегами, удобный редактор
-                        для управления контентом.</p>
-                    <p>Недостатки: открытый код часто подвергается атакам и вирусам из-за чего пользователи жалуются на
-                        низкую безопасность.</p>
-                </div>
-                <div class="ui section divider"></div>
-                <div class="vopr3" id="section3">
-                    <p>
-                    <h1>3. OpenCart</h1>
-                    </p>
-                    <div class="Opencart">
-                        <img src="opencart.jpg" width="600" height="400">
+                    <h1 class="ui header">CMS-системы: что это такое и для чего используются</h1>
+                    <h1 class="ui header">Ниже рассмотрим популярные CMS-системы.</h1>
+                    <div class="ui segment">
+                        <div class="article__content">
+                            <div class="vopr" id="section1">
+                                <p>
+                                <h1 class="ui header">1. WordPress</h1>
+                                </p>
+                            </div>
+                            <div class="WordPress">
+                                <img src="wordpress.jpg" alt="Логотип WordPress" width="auto" height="auto">
+                            </div>
+                            <div class="opr">
+                                <p><span>
+                                        Подходит для создания сайтов под любые задачи (блог, форум, интернет-магазин,
+                                        новостной
+                                        портал). Внутри большое количество плагинов и открытый код, который можно
+                                        дорабатывать
+                                        под
+                                        свои нужды. Движок сайта работает на MySQL — системе управления базами данных.
+                                    </span></p>
+                                <p>
+                                    WordPress хорош тем, что создавать там контент достаточно просто. Если вам не нужен
+                                    сложный
+                                    многостраничник, с детальной настройкой каждого блока, то WordPress — ваш выбор.
+                                </p>
+                                <p>Однако если установить слишком много плагинов, то сайт может плохо работать. Еще из
+                                    минусов:
+                                    исходный код не идеально подходит для SEO-оптимизации, нет технической поддержки,
+                                    платформа
+                                    не
+                                    принимает оплату от пользователей из России.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="opr3">
-                    <p>CMS больше подходит для интернет-магазинов, поэтому есть много интеграций с платежными сервисами,
-                        курьерскими службами и модулями работы с товарами.</p>
-                    <p>Сделать сайт на OpenCart легко, из-за разнообразия шаблонов. А вот чтобы поддерживать и развивать
-                        его, придется обратиться за помощью к специалисту.</p>
-                    <p>Из приятного: есть встроенный редактор и SEO-модуль для ведения блога, эффективная работа с
-                        каталогом
-                        до 30 тыс. товаров.</p>
-                    <p>Однако из-за того, что это система с открытым кодом, она тоже подвержена атакам и вирусам.</p>
-                </div>
-                <div class="ui section divider"></div>
-                <div class="vopr4" id="section4">
-                    <p>
-                    <h1>4. Drupal</h1>
-                    </p>
-                    <div class="Drupal">
-                        <img src="drupal.jpg" width="400" height="400">
+                    <div class="ui section divider"></div>
+                    <div class="ui segment">
+                        <div class="article__content">
+                            <div class="vopr2" id="section2">
+                                <p>
+                                <h1 class="ui header">2. Joomla!</h1>
+                                </p>
+                                <div class="Joomla">
+                                    <img src="Joomla.png" width="auto" height="400">
+                                </div>
+                            </div>
+                            <div class="opr">
+                                <p>Бесплатная платформа с открытом исходным кодом. Здесь также можно расширять
+                                    возможности
+                                    сайта
+                                    и
+                                    создавать его под любые нужды. Однако сделать это будет гораздо сложнее, чем на
+                                    WordPress.
+                                </p>
+                                <p>У Joomla есть встроенная двухфакторная авторизация, система работы с seo-тегами,
+                                    удобный
+                                    редактор
+                                    для управления контентом.</p>
+                                <p>Недостатки: открытый код часто подвергается атакам и вирусам из-за чего пользователи
+                                    жалуются
+                                    на
+                                    низкую безопасность.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="opr4">
-                    <p>Изначально система создавалась для профессиональных разработчиков, но затем на ней стали работать
-                        обычные пользователи. Это гибкая система управления контентом, которая подходит для
-                        интернет-магазинов, информационных и корпоративных сайтов.</p>
-                    <p>Для новичков не подойдет, так как требуются специальные знания в программировании. Работать с
-                        плагинами сложнее: иногда совместимость между плагинами и версией движка сайта может быть
-                        нарушена,
-                        потому что обновление не всегда происходит одновременно, а готовые шаблоны не всегда высокого
-                        качества.</p>
-                </div>
-                <div class="ui section divider"></div>
-                <div class="vopr5" id="section5">
-                    <p>
-                    <h1>5. 1C-Битрикс</h1>
-                    </p>
-                    <div class="bitr">
-                        <img src="1C.jpg" width="400" height="400">
+                    <div class="ui section divider"></div>
+                    <div class="ui segment">
+                        <div class="article__content">
+                            <div class="vopr3" id="section3">
+                                <p>
+                                <h1 class="ui header">3. OpenCart</h1>
+                                </p>
+                                <div class="Opencart">
+                                    <img src="opencart.jpg" width="600" height="400">
+                                </div>
+
+                            </div>
+                            <div class="opr">
+                                <p>CMS больше подходит для интернет-магазинов, поэтому есть много интеграций с
+                                    платежными
+                                    сервисами,
+                                    курьерскими службами и модулями работы с товарами.</p>
+                                <p>Сделать сайт на OpenCart легко, из-за разнообразия шаблонов. А вот чтобы поддерживать
+                                    и
+                                    развивать
+                                    его, придется обратиться за помощью к специалисту.</p>
+                                <p>Из приятного: есть встроенный редактор и SEO-модуль для ведения блога, эффективная
+                                    работа
+                                    с
+                                    каталогом
+                                    до 30 тыс. товаров.</p>
+                                <p>Однако из-за того, что это система с открытым кодом, она тоже подвержена атакам и
+                                    вирусам.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="opr5">
-                    <p>CMS от разработчиков самой популярной CRM «1C». На разных тарифных планах возможности платформы
-                        отличаются, поэтому она подойдет как малому, так и крупному бизнесу. CMS достаточно безопасна,
-                        по сравнению с другими.</p>
-                    <p>1C-Битрикс намного сложнее настраивать. Услуги специалистов стоят дороже, требуется более мощный
-                        хостинг, потому что сайты на Битрикс тяжелее других систем.</p>
-                    <p>Из хорошего: легко интегрируется с продуктами 1С, есть возможность проводить A/B тестирования
-                        заголовков, готовые шаблоны, интеграции и расширенные настройки для кастомизации.</p>
+                    <div class="ui section divider"></div>
+                    <div class="ui segment">
+                        <div class="article__content">
+                            <div class="vopr4" id="section4">
+                                <p>
+                                <h1 class="ui header">4. Drupal</h1>
+                                </p>
+                                <div class="Drupal">
+                                    <img src="drupal.jpg" width="400" height="400">
+                                </div>
+                            </div>
+                            <div class="opr4">
+                                <p>Изначально система создавалась для профессиональных разработчиков, но затем на ней
+                                    стали
+                                    работать
+                                    обычные пользователи. Это гибкая система управления контентом, которая подходит для
+                                    интернет-магазинов, информационных и корпоративных сайтов.</p>
+                                <p>Для новичков не подойдет, так как требуются специальные знания в программировании.
+                                    Работать с
+                                    плагинами сложнее: иногда совместимость между плагинами и версией движка сайта может
+                                    быть
+                                    нарушена,
+                                    потому что обновление не всегда происходит одновременно, а готовые шаблоны не всегда
+                                    высокого
+                                    качества.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui section divider"></div>
+                    <div class="ui segment">
+                        <div class="article__content">
+                            <div class="vopr5" id="section5">
+                                <p>
+                                <h1 class="ui header">5. 1C-Битрикс</h1>
+                                </p>
+                                <div class="bitr">
+                                    <img src="1C.jpg" width="400" height="400">
+                                </div>
+                            </div>
+                            <div class="opr5">
+                                <p>CMS от разработчиков самой популярной CRM «1C». На разных тарифных планах возможности
+                                    платформы
+                                    отличаются, поэтому она подойдет как малому, так и крупному бизнесу. CMS достаточно
+                                    безопасна,
+                                    по сравнению с другими.</p>
+                                <p>1C-Битрикс намного сложнее настраивать. Услуги специалистов стоят дороже, требуется
+                                    более
+                                    мощный
+                                    хостинг, потому что сайты на Битрикс тяжелее других систем.</p>
+                                <p>Из хорошего: легко интегрируется с продуктами 1С, есть возможность проводить A/B
+                                    тестирования
+                                    заголовков, готовые шаблоны, интеграции и расширенные настройки для кастомизации.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
